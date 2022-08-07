@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Budlett </title>
+</head>
+<body>
+    <div id="nav">
+        <a href="budsjett.html">Budsjett</a>
+        <a href="utgifter.html">Utgifter</a>
+        <a href="oversikt.html">Oversikt</a>
+        <a href="økotips.html">Økotips</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <header id="header">
+        <div id="nav-hamburger">MENY ↓</div>
+        <h1 id="logo">
+        
+            <a href="main.html">Budlett</a>
+        
+        </h1>
+        <div id="nav-logginn">
+            <a href="logginn.html">LOGG INN</a>
+        </div>
+    </header>
+    
+        <div id="kontakt-box">       
+            <div> 
+                <h2>Kontakt oss</h2> <br>
+
+                <h3>Epost:</h3>
+                <p>budlett@gmail.com</p> <br>
+
+                <h3>Telefon:</h3> 
+                <p>+47 00 00 00 00</p> <br>
+
+                <h3>Kontoret vårt:</h3>
+                <p>Isbjørnveien 88, 7654 Svalbard, kjelleretasjen.</p> <br>
+
+
+                <h3>Kontaktskjema</h3>
+                <form id="kontakt-skjema">
+                    <label for="kontakt-navn-input">Navn</label>
+                    <input type=text id="kontakt-navn-input" name="navn" required> 
+                    <br>
+                    <label for="kontakt-epost-input">Epost</label>
+                    <input type=text id="kontakt-epost-input" name="epost" required> 
+                    <br>
+                    <br>
+                    <textarea rows="10" cols="25" id="tilbakemelding" name="tilbakemelding"
+                        placeholder=" Skriv inn din tilbakemelding her :)"></textarea> <br>
+                    <input type="submit" id="tilbakemeldingknapp" value="Send inn">
+                </form>
+
+            </div>
+
+            <div id="kontakt-img-box">
+                <img src="img/kontor.jpg" alt="Bilde av kontoret vårt, der alle møblene er dekt av snø">
+                <br>
+                <i>På vårt trivelige Svalbard-kontor er det bare å sette seg ned for å ta en prat.</i>
+            </div>
+        </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/kontaktskjema.js"></script>
+</body>
+</html>

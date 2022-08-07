@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Budlett </title>
+</head>
+<body>
+    <div id="nav">
+        <a href="budsjett.html">Budsjett</a>
+        <a href="utgifter.html">Utgifter</a>
+        <a href="oversikt.html">Oversikt</a>
+        <a href="økotips.html">Økotips</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <header id="header">
+
+        <div id="nav-hamburger">MENY ↓</div>
+
+        <h1 id="logo">
+            <a href="main.html">Budlett</a>
+        </h1>
+
+        <div id="nav-logginn">
+            <a href="logginn.html">LOGG INN</a>
+        </div>
+    </header>
+
+    <div id="utgiftdiv" >
+        <h1>Legg inn dine faktiske utgifter</h1> <br>
+        <p>Nedenfor kan du velge en kategori fra budsjettet, og legge inn en ny utgift-sum på denne. Om du ikke la inn kategorien i budsjettet, legg den til i nederste felt først. Du kan legge til så mange kategorier du vil, og så mange registreringer på hver kategori som nødvendig. </p> <br>
+        
+        <div id="cashbildebox">
+            <img src="img/cash.jpeg" alt="bilde av norske sedler og kronestykker" width="300">
+        </div>
+
+        <div id="utgifterdiv">
+            <fieldset>        
+                <label for="utgift-maaned">Måned:</label>
+                <select id="utgift-maaned" name="maaned">
+        
+                </select>
+                <br><br>
+                <label for="utgift-kategorier">Velg en kategori:</label>
+                <select id="utgift-kategorier" name="kategorier">
+                </select> <br><br>
+
+                <input type="number" id="utgift-sum" />
+                <button id="addUtgiftButton">Legg til</button>
+            </fieldset>
+        </div>
+        
+        <br><br>
+        
+        <h3>Legg til en ekstra kategori:</h3> <br>
+        <div id="nykatutgift">
+            <input type="text" id="nyKategoriInput" /> <button id="nyKategoriButton">Lag ny kategori</button>
+        </div>
+
+        <div id="utgift-knapper-box">
+                <a href="budsjett.html" id="budsjett-utgift-knapp">Endre budsjett </a>
+                <a href="oversikt.html" id="oversikt-utgift-knapp">Gå til oversikt</a>
+        </div>
+        
+    </div>
+    <script src="js/nav.js"></script>
+    <script src="js/utgifter.js"></script>
+</body>
+</html>

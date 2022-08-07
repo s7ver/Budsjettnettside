@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Budlett </title>
+</head>
+<body>
+    <div id="nav">
+        <a href="budsjett.html">Budsjett</a>
+        <a href="utgifter.html">Utgifter</a>
+        <a href="oversikt.html">Oversikt</a>
+        <a href="økotips.html">Økotips</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <header id="header">
+        <div id="nav-hamburger">MENY ↓</div>
+        <h1 id="logo">
+        
+            <a href="main.html">Budlett</a>
+        
+        </h1>
+        <div id="nav-logginn">
+            <a href="logginn.html">LOGG INN</a>
+        </div>
+    </header>
+
+    <div id="budsjett" class="content_box">
+        
+        <div id="budsjett-info-box">
+            <h1>Sett opp et månedsbudsjett</h1> <br>
+            <p> Her kan du oppgi inntekt og noen gjentagende utgiftsposter i budsjettet. Trykk på <i>Lagre</i> når du er ferdig. Det er ingen fare om du ikke kommer på alle utgiftene dine på forhånd, du kan lett legge dem til i neste steg!</p>
+            <img src="img/utgifter.jpeg" alt="illustrasjon av et rød sirkel med grønne sedler og tårn av mynter" id="budsjettbilde" width="30">
+        </div>
+        <!--
+        <div id="intekt-poster-box">
+            <h2>Inntektsposter</h2> <br>
+            Total inntekt: <input type="text">
+        </div> -->
+
+        <div id="utgift-poster-box">
+            <div id="utgift-poster-head">
+                <h2>Utgiftsposter</h2>
+                <button id="add-kategori-lagre">Lagre</button>
+            </div>
+            <table id="u-poster"> </table>
+
+                
+            <table>
+            <tr>
+            <td>
+            <div id="add-kategori">
+                <input type="text" placeholder="Legg til en utgifts-kategori" id="add-kategori-input">
+                <button id="add-kategori-button">Legg til</button> 
+            </div>
+            </td>
+            </tr></table>
+            
+        </div>
+
+        <div id="budsjett-utgift-box">
+            <a href="utgifter.html" id="budsjett-utgift-knapp1">Legg til utgifter</a>
+        </div>
+
+
+<!--
+    <div id="budsjett" class="content_box">
+        <h1>Sett opp et månedsbudsjett</h1> <br>
+        <h2>Estimerte utgiftsposter:</h2> <br>
+        
+            Budsjettpost: <input type="text" name="utgift" id="budsjettpost"> Kr: <input type="number" name="budsjettpost" id="kr">
+            <button type="submit" id="knapp">Legg til</button> <br> <br>
+            <p>Husk å inkludere dine største budsjettposter, for eksempel penger til mat, transport, uteliv, leie, strøm og liknende. </p>
+    
+    <br>
+    <hr/>
+    </div>
+    <div id="budsjett" class="content_box">
+        <h2>Estimerte inntekter:</h2> <br>
+    
+            Budsjettpost: <input type="text" name="budsjettpost" id="budsjettpost"> Kr: <input type="number" name="budsjettpost" id="inntekt">
+            <button type="submit" id="knapp2">Legg til</button> <br> <br>
+            <p>Husk å ta med studelånet ditt, og din eventuelle jobb. Har du i tillegg andre inntektskilder?</p>
+    
+    <br>
+    <hr/>
+    </div>
+    <div>
+    -->
+    </div>
+    <script src="js/nav.js"></script>
+    <script src="js/budsjett.js"></script>
+</body>
+</html>

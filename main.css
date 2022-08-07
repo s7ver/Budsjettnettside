@@ -1,0 +1,586 @@
+/******************************************************************************************
+
+                              ROOOOOT CONTENT
+                              
+***********************************************************************************************/
+
+:root {
+  --color-background: rgb(255, 255, 255);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.content_box {
+  background-color: white;
+  /*border: 1px solid black;*/
+  width: 90%;
+  min-height: calc(100vh - 5rem);
+  margin: auto;
+}
+
+p,
+header,
+h1,
+h2,
+h3,
+#nav,
+#content_box {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV-BAR */
+
+#nav {
+  background-color: rgb(220, 234, 254);
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -5rem;
+  height: 5rem;
+  width: 100%;
+  transition: top 200ms ease-out;
+}
+
+#nav-logginn :first-child{
+  display: none;
+}
+
+#nav a {
+  background-color: rgb(220, 234, 254);
+  width: 10%;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: rgb(9, 12, 12);
+
+  position: relative;
+}
+
+#nav a:hover {
+  opacity: 0.7;
+}
+
+#header {
+  background-color: rgb(220, 234, 254);
+  width: 100%;
+  position: relative;
+  top: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top 200ms ease-out;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 1);
+}
+
+#nav-hamburger,
+#nav-logginn {
+  background-color: rgb(220, 234, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 20%;
+  top: 0rem;
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+#nav-hamburger {
+  left: 1rem;
+}
+
+#nav-logginn {
+  right: 1rem;
+}
+
+#logo {
+  text-align: center;
+  border: 0px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 60%;
+}
+
+/*STARTSIDEN*/
+
+#startside-box {
+  margin-top: 2vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5vw;
+}
+
+#startside {
+  min-height: calc(100% - 5rem);
+  width: 50%;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#startside p {
+  margin: 2vw;
+}
+
+#main-penger-img {
+  min-height: calc(100% - 5rem);
+  width: 50%;
+  text-align: center;
+}
+
+#main-penger-img img {
+  width: 90%;
+  border-radius: 5%;
+}
+
+/*Knapper på startsiden*/
+
+#main-utgift-nav {
+  position: absolute;
+  left: 55vw;
+  top: 45vw;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 3vw;
+  background-color: rgb(220, 234, 254);
+}
+
+#main-budsjett-nav {
+  position: absolute;
+  left: 77vw;
+  top: 45vw;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 3vw;
+  background-color: rgb(220, 234, 254);
+}
+
+/*BUDSJETT*/
+
+#budsjett > div {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#budsjett-info-box img{
+  display: flex;
+  float: right;
+  width: 30%;
+}
+
+#budsjett-utgift-box {
+  display: flex;
+  float: right;
+}
+
+#budsjett-utgift-knapp1 {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: rgb(220, 234, 254);
+}
+
+#utgift-poster-head {
+  display: flex;
+}
+#utgift-poster-head h2 {
+  width: 42%;
+  text-align: left;
+}
+
+#utgift-poster-head button {
+  width: 20%;
+}
+
+#u-poster {
+  margin: 1rem;
+  border: 0px;
+
+  width: fit-content;
+}
+
+.u-post {
+  border-bottom: 0.2rem solid black;
+}
+
+.u-post th {
+  min-width: 20vw;
+  text-align: left;
+  height: 4rem;
+  font-size: 3vw;
+  padding-left: 1rem;
+}
+
+.u-post td {
+  padding-left: 1rem;
+  height: 4rem;
+  font-size: 2vw;
+}
+
+.u-post input {
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  height: 80%;
+
+  width: 30vw;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+}
+
+#add-kategori {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  width: fit-content;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+  
+}
+
+#add-kategori-input {
+  width: 41vw;
+  height: 3rem;
+  font-size: 3vw;
+  border: 0px;
+  padding-left: 1rem;
+}
+
+#add-kategori input:focus {
+  outline: none !important;
+}
+
+#add-kategori input:active {
+  border: 0px;
+}
+
+#add-kategori-lagre {
+  background-color: rgb(135, 243, 125);
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+  padding: 10px;
+}
+
+#add-kategori-button {
+  cursor: pointer;
+  font-size: 1.9vw;
+  text-align: center;
+  margin: 0 1rem;
+  width: 10vw;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: rgb(135, 243, 125);
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+}
+
+/* UTGIFTER*/
+
+#utgiftdiv {
+  margin-top: 2vw;
+  display: block; 
+  padding: 3vw;
+}
+
+#utgifterdiv fieldset{
+  display: block;
+  max-width: 50%;
+  border-radius: 6px;
+  border-width: 2px;
+  padding: 3vw;
+  font-size: 20px;
+}
+#cashbildebox img{
+  float: right;
+  margin-right: 1vw;
+  border-radius: 20px;
+  width: 45%;
+}
+
+#addUtgiftButton,
+#nyKategoriButton {
+  padding: 3px;
+  background-color: rgb(135, 243, 125);
+}
+
+#nykatutgift {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  padding: 1vw;
+  width: 50%;
+}
+
+#utgift-maaned,
+#utgift-kategorier {
+  font-size: 17px;
+}
+
+#utgift-knapper-box {
+  display: flex;
+}
+
+#budsjett-utgift-knapp {
+  position: absolute;
+  left: 57vw;
+  top: 85%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: rgb(220, 234, 254);
+}
+
+#oversikt-utgift-knapp {
+  position: absolute;
+  left: 77vw;
+  top: 85%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: rgb(220, 234, 254);
+}
+
+/* OVERSIKT */
+
+#oversiktbody {
+  display: block;
+  margin-top: 3vw;
+  margin: 2vw;
+}
+
+#oversikt {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+table {
+  width: 80%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table th {
+  height: 3%;
+}
+
+#oversikt tr {
+  width: 100%;
+  border: 1px solid black;
+}
+#oversikt tr > * {
+  text-align: left;
+  width: 16%;
+  border: 1px solid black;
+  padding: 1%;
+}
+
+hr {
+  display: block;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 1px;
+}
+
+#o-knapper {
+  display: flex;
+}
+
+#o-u {
+  position: absolute;
+  left: 40%;
+  top: 80%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: rgb(220, 234, 254);
+}
+
+#o-ø {
+  position: absolute;
+  left: 60%;
+  top: 80%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: rgb(220, 234, 254);
+}
+
+/*ØKOTIPS*/
+
+#økotips {
+  display: block;
+  margin: 3vw;
+}
+
+#økotips div {
+  padding: 2vw;
+}
+
+#strømtekst {
+  display: block;
+  width: 50%;
+  float: right;
+}
+
+#apptekst {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+#app {
+  display: flex;
+  width: 50%;
+  float: right;
+}
+
+#strøm {
+  display: flex;
+  width: 50%;
+  float: left;
+}
+
+#mattilbud,
+#tibber {
+  width:70%;
+  border-radius: 10%;
+}
+
+#økknapp {
+  display: flex;
+}
+
+#økknapp1 {
+  position: absolute;
+  left: 90%;
+  top: 110%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: rgb(220, 234, 254);
+}
+
+/*KONTAKTSIDE*/
+
+#kontakt-box {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5vw;
+}
+
+#kontakt-box h2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#kontakt-box div {
+  min-height: calc(100% - 5rem);
+  width: 40%;
+  text-align: center;
+}
+
+#kontakt-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#kontakt-img-box img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+#kontakt-skjema {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+#kontakt-navn-input {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#tilbakemeldingknapp{
+  padding: 3px;
+  background-color: rgb(135, 243, 125);
+}
+
+/*Knapper:hover*/
+
+#main-utgift-nav:hover,
+#main-budsjett-nav,
+#add-kategori-lagre:hover,
+#add-kategori-button:hover
+#main-budsjett-nav:hover,
+#økknapp1:hover, 
+#o-u:hover,
+#o-ø:hover,
+#oversikt-utgift-knapp:hover,
+#budsjett-utgift-knapp:hover {
+  background-color: cornflowerblue;
+}
+/*
+#main-budsjett-nav:hover {
+  background-color: cornflowerblue;
+}
+
+#økknapp1:hover{
+  background-color: cornflowerblue;
+}
+
+#o-u:hover {
+  background-color: cornflowerblue;
+}
+
+#o-ø:hover {
+  background-color: cornflowerblue;
+}
+
+#oversikt-utgift-knapp:hover {
+  background-color: cornflowerblue;
+}
+
+#budsjett-utgift-knapp:hover {
+  background-color: cornflowerblue;
+}
+
+#add-kategori-button:hover {
+  background-color: cornflowerblue;
+}
+
+#add-kategori-lagre:hover {
+  background-color: cornflowerblue;
+}
+*/
